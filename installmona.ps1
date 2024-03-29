@@ -1,4 +1,4 @@
-$share_path = "\\tsclient\linux\mona-share\"
+$share_path = "\\tsclient\mona-share\"
 $install_dir = "C:\Users\Offsec\Desktop\install-mona"
 
 echo "[+] creating installation directory: $install_dir"
