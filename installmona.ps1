@@ -39,4 +39,4 @@ cd "C:\Program Files\Common Files\Microsoft Shared\VC"
 regsvr32 /s msdia90.dll
 
 echo "[=] in case you see something about symbols when running mona, try executing the following (the runtime took too long to install)"
-echo "regsvr32 "C:\Program Files\Common Files\Microsoft Shared\VC\msdia90.dll"
+echo "regsvr32 C:\Program Files\Common Files\Microsoft Shared\VC\msdia90.dll"
