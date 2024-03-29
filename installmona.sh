@@ -4,7 +4,7 @@ TOOLS=("https://github.com/corelan/windbglib/raw/master/pykd/pykd.zip" "https://
 
 TMPDIR=$(mktemp -d)
 SHARENAME="mona-share"
-SHARE="\\\\tsclient\\linux\\$SHARENAME"
+SHARE="\\\\tsclient\\$SHARENAME"
 
 trap "rm -rf $TMPDIR" SIGINT 
 
