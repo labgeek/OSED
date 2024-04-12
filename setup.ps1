@@ -15,7 +15,7 @@ echo "[+] installing v80 c++ runtime"
 copy "Z:\vcredist_x86_80.exe" $install_dir
 cd $install_dir
 .\vcredist_x86_80.exe /Q
-start-sleep 10
+start-sleep 60
 
 echo "[+] backing up default pykd files"
 move "$dbg_dir\winext\pykd.pyd" "$dbg_dir\winext\pykd.pyd.default"
@@ -32,7 +32,7 @@ copy "$dbg_dir\winext\pykd.pyd" "$dbg_dir\winext\pykd.pyd.mona"
 echo "[+] installing python2.7"
 copy "Z:\python-2.7.17.msi" $install_dir
 msiexec.exe /i $install_dir\python-2.7.17.msi /qn
-start-sleep 10
+start-sleep 60
 
 # register Python2.7 binaries in path before Python3
 echo "[+] adding python2.7 to the PATH"
