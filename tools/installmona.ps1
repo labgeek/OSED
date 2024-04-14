@@ -14,7 +14,7 @@ start-sleep 60
 echo "[+] backing up old pykd files"
 move "C:\Program Files\Windows Kits\10\Debuggers\x86\winext\pykd.pyd" "C:\Program Files\Windows Kits\10\Debuggers\x86\winext\pykd.pyd.bak"
 move "C:\Program Files\Windows Kits\10\Debuggers\x86\winext\pykd.dll" "C:\Program Files\Windows Kits\10\Debuggers\x86\winext\pykd.dll.bak"
-
+start-sleep 5
 # Installing personalized windbg workspace for labgeek
 echo "[+] Installing the WINDBG workspace for labgeek"
 copy "$share_path\windbg.reg" $install_dir
