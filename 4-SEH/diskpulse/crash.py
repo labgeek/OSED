@@ -2,10 +2,8 @@ import struct
 import socket
 from pwn import *
 
-
 def LE(num):
     return struct.pack('<I', num)
-
 
 def send(payload, host='192.168.231.10', port=80):
     request  = b'GET /' + payload + b'HTTP/1.1' + b'\r\n'
