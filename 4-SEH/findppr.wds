@@ -1,3 +1,9 @@
+
+
+0:012> load .narly
+0:012> !nmod
+10000000 10221000 libspp               /SafeSEH OFF                C:\Program Files\Vuln Software\bin\libspp.dll
+
 .block
 {
     .for (r $t0 = 0x58; $t0 < 0x5F; r $t0 = $t0 + 0x01)
@@ -8,3 +14,12 @@
         }
     }
 }
+
+0:012> $><C:\find-ppr.wds
+0x101576c0
+...
+0:012> u 101576c0 L3
+libspp!pcre_exec+0x16450:
+101576c0 58              pop     eax
+101576c1 5b              pop     ebx
+101576c2 c3              ret
