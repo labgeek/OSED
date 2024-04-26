@@ -1,3 +1,10 @@
+##########################
+# Program:  badchars.py
+# labgeek
+# Date:  4/26/2024
+##########################
+
+
 #!/usr/bin/python
 import sys
 import struct
