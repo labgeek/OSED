@@ -16,7 +16,7 @@ port = 80
 def LE(num):
     return struct.pack('<I', num)
 
-# badchars => 0e, 00, 0f, 2f, 20, 0d
+# badchars => 0x0e, 0x00, 0x0f, 0x2f, 0x20, 0x0d
 def send_exploit_request():
 
     badchars = (
